@@ -1,35 +1,44 @@
 0x1D. C - Binary trees
-_________________________________________________________________________________________________
+-------------------------------------------------------------------------------------------------
 
 
--- Understanding Binary Trees:
+ Understanding Binary Trees
 -------------------------------------------------------------------------------------------------
 
 In the world of data structures, binary trees are stars in their own right. They're hierarchical structures composed of nodes, each node containing some data and pointers to its left and right children. This setup allows for efficient searching, insertion, and deletion operations.
 
--- Binary Tree vs. Binary Search Tree:
+ Binary Tree vs. Binary Search Tree
 ------------------------------------------------------------------------------------------------
 One common type of binary tree is the Binary Search Tree (BST), where nodes are ordered in a specific way to facilitate efficient searching. Unlike a general binary tree, in a BST, the left child of a node contains values lesser than the node's value, and the right child contains values greater than the node's value.
 
--- Time Complexity Gain:
+ Time Complexity Gain
 -------------------------------------------------------------------------------------------------
 Compared to linked lists, binary trees offer significant gains in terms of time complexity, especially for search operations. While linked lists have a linear time complexity for search (O(n)), binary trees offer logarithmic complexity (O(log n)), making them much faster for large datasets.
 
--- Characteristics of Binary Trees:
+ Characteristics of Binary Trees
 -------------------------------------------------------------------------------------------------
 The depth of a node refers to the length of the path from the root to that node. The height of a binary tree is the length of the longest path from the root to a leaf node. The size of a binary tree denotes the total number of nodes in the tree.
 
--- Traversing Binary Trees:
+ Traversing Binary Trees
 -------------------------------------------------------------------------------------------------
 Various methods exist to traverse a binary tree, including pre-order, in-order, and post-order traversals. Each method has its unique way of visiting and processing nodes.
 
--- Types of Binary Trees:
+ Types of Binary Trees
 -------------------------------------------------------------------------------------------------
 Binary trees come in different flavors: complete, full, perfect, and balanced. A complete binary tree is one where every level except possibly the last is completely filled, and all nodes are as far left as possible. A full binary tree is a tree in which every node has either 0 or 2 children. A perfect binary tree is both complete and full. A balanced binary tree is one in which the height of the left and right subtrees of any node differs by no more than one.
 
--- Data Structures:
+ Data Structures
 -------------------------------------------------------------------------------------------------
 . Here's a basic structure for a binary tree node:
+
+/**
+* struct binary_tree_s - Binary tree node
+*
+* @n: Integer stored in the node
+* @parent: Pointer to the parent node
+* @left: Pointer to the left child node
+* @right: Pointer to the right child node
+*/s a basic structure for a binary tree node:
 typedef struct binary_tree_s {
     int n;
     struct binary_tree_s *parent;
