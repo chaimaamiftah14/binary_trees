@@ -28,30 +28,18 @@ Binary trees come in different flavors: complete, full, perfect, and balanced. A
 
  Data Structures
 -------------------------------------------------------------------------------------------------
-# Binary Tree Node Structure
 
-- This is a basic structure for a binary tree node.
-# Binary Tree Node Structure
+## A few examples of data structures related to binary trees
+ 
+1. **Binary Search Tree (BST):** A binary tree in which all left descendants of a node have values less than the node's value, and all right descendants have values greater than the node's value. It allows for efficient searching, insertion, and deletion of nodes.
 
-This is a basic structure for a binary tree node.
+2. **AVL Tree:** A self-balancing binary search tree where the heights of the two child subtrees of any node differ by at most one. This ensures that the tree remains balanced and guarantees logarithmic time complexity for insertion, deletion, and search operations.
 
-```c
-/**
- * struct binary_tree_s - Binary tree node
- *
- * @n: Integer stored in the node
- * @parent: Pointer to the parent node
- * @left: Pointer to the left child node
- * @right: Pointer to the right child node
- */
-typedef struct binary_tree_s {
-    int n;
-    struct binary_tree_s *parent;
-    struct binary_tree_s *left;
-    struct binary_tree_s *right;
-} binary_tree_t;
+3. **Heap:** A special type of binary tree where the value of each node is greater than or equal to (or less than or equal to) the values of its children. It's commonly used to implement priority queues and is efficient for extracting the minimum (or maximum) element.
 
----
+4. **Red-Black Tree:** Another self-balancing binary search tree where each node has an extra bit representing its color (red or black). The tree maintains certain properties that ensure it remains balanced, allowing for efficient operations.
+
+5. **Trie (Prefix Tree):** A tree data structure used to store a dynamic set of strings where each node represents a common prefix of its descendants. It's commonly used in applications involving string search and autocomplete.
 
 ## Additional Structures
 
@@ -61,11 +49,11 @@ Here are some additional structures:
 - AVL Tree: `typedef struct binary_tree_s avl_t;`
 - Max Binary Heap: `typedef struct binary_tree_s heap_t;`
 
----
+--------------------------------------------------------------------------------------------------
 
 ## Tasks
 
-Now let's dive into some tasks to work with binary trees:
+Now let's dive into some tasks to work with binary trees
 
 1. **New Node:** Write a function that creates a binary tree node.
 2. **Insert Left:** Write a function that inserts a node as the left child of another node.
