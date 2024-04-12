@@ -1,9 +1,8 @@
 0x1D. C - Binary trees
--------------------------------------------------------------------------------------------------
-
+--------------------------------------------------------------------------------------------------
 
  Understanding Binary Trees
--------------------------------------------------------------------------------------------------
+--------------------------------------------------------------------------------------------------
 
 In the world of data structures, binary trees are stars in their own right. They're hierarchical structures composed of nodes, each node containing some data and pointers to its left and right children. This setup allows for efficient searching, insertion, and deletion operations.
 
@@ -29,63 +28,48 @@ Binary trees come in different flavors: complete, full, perfect, and balanced. A
 
  Data Structures
 -------------------------------------------------------------------------------------------------
-. Here's a basic structure for a binary tree node:
+# Binary Tree Node Structure
+
+- This is a basic structure for a binary tree node.
 
 ```c
 /**
-* struct binary_tree_s - Binary tree node
-*
-* @n: Integer stored in the node
-* @parent: Pointer to the parent node
-* @left: Pointer to the left child node
-* @right: Pointer to the right child node
-*/s a basic structure for a binary tree node:
+ * struct binary_tree_s - Binary tree node
+ *
+ * @n: Integer stored in the node
+ * @parent: Pointer to the parent node
+ * @left: Pointer to the left child node
+ * @right: Pointer to the right child node
+ */
 typedef struct binary_tree_s {
     int n;
     struct binary_tree_s *parent;
     struct binary_tree_s *left;
     struct binary_tree_s *right;
 } binary_tree_t;
-
-. And here are some additional structures:
+- Additional Structures
+Here are some additional structures:
 
 Binary Search Tree: typedef struct binary_tree_s bst_t;
 AVL Tree: typedef struct binary_tree_s avl_t;
 Max Binary Heap: typedef struct binary_tree_s heap_t;
 Tasks
+- Now let's dive into some tasks to work with binary trees:
 
-. Now let's dive into some tasks to work with binary trees:
-
-1- New Node: Write a function that creates a binary tree node.
-
-2- Insert Left: Write a function that inserts a node as the left child of another node.
-
-3- Insert Right: Write a function that inserts a node as the right child of another node.
-
-4- Delete: Write a function that deletes an entire binary tree.
-
-5- Is Leaf: Write a function that checks if a node is a leaf.
-
-6- Is Root: Write a function that checks if a given node is a root.
-
-7- Pre-order Traversal: Write a function that traverses a binary tree using pre-order traversal.
-
-8- In-order Traversal: Write a function that traverses a binary tree using in-order traversal.
-
-9- Post-order Traversal: Write a function that traverses a binary tree using post-order traversal.
-
-10- Height: Write a function that measures the height of a binary tree.
-
-11- Depth: Write a function that measures the depth of a node in a binary tree.
-
-12- Size: Write a function that measures the size of a binary tree.
-
-13- Leaves: Write a function that counts the leaves in a binary tree.
-
-14- Nodes: Write a function that counts the nodes with at least 1 child in a binary tree.
-
-15- Balance Factor: Write a function that measures the balance factor of a binary tree.
-
-16- Is Full: Write a function that checks if a binary tree is full.
-
-17- Is Perfect: Write a function that checks if a binary tree is perfect.
+1. New Node: Write a function that creates a binary tree node.
+2. Insert Left: Write a function that inserts a node as the left child of another node.
+3. Insert Right: Write a function that inserts a node as the right child of another node.
+4. Delete: Write a function that deletes an entire binary tree.
+5. Is Leaf: Write a function that checks if a node is a leaf.
+6. Is Root: Write a function that checks if a given node is a root.
+7. Pre-order Traversal: Write a function that traverses a binary tree using pre-order traversal.
+8. In-order Traversal: Write a function that traverses a binary tree using in-order traversal.
+9. Post-order Traversal: Write a function that traverses a binary tree using post-order traversal.
+10. Height: Write a function that measures the height of a binary tree.
+11. Depth: Write a function that measures the depth of a node in a binary tree.
+12. Size: Write a function that measures the size of a binary tree.
+13. Leaves: Write a function that counts the leaves in a binary tree.
+14. Nodes: Write a function that counts the nodes with at least 1 child in a binary tree.
+15. Balance Factor: Write a function that measures the balance factor of a binary tree.
+16. Is Full: Write a function that checks if a binary tree is full.
+17. Is Perfect: Write a function that checks if a binary tree is perfect.
